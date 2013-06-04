@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+    <title>Yamm! - Megamenu for Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Megamenu for Bootstrap from Twitter">
+    <meta name="author" content="geedmo">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- Yamm styles -->
+    <link href="assets/css/yamm.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+
+    body {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      color: #666;
+    }
+    footer {
+      margin-top: 200px;
+    }
+		
+    /*-----------------------------
+		  Show a nice demo 
+		 -----------------------------*/
+    .container { 
+      min-width: 320px; 
+    }
+
+		.yamm {
+			margin: 0 0 50px;
+		}
+
+    /* Grid demo styles */
+    .layout-demo,
+    .grid-demo {
+      padding: 10px 20px;
+    }
+
+    .layout-demo [class*="span"] {
+      line-height: 80px;
+    }
+
+    .grid-demo [class*="span"] {
+      line-height: 30px;
+    }
+
+		.grid-demo [class*="span"],
+    .layout-demo [class*="span"] {
+			background: #eee;
+			margin-top: 5px;
+      margin-bottom: 5px;
+			font-size: 12px;
+			text-align: center;
+      font-weight: bold;
+		}
+		.grid-demo [class*="span"]:hover,
+    .layout-demo [class*="span"]:hover {
+			background: #ddd;
+		}
+    /* End Grid demo styles */
+
+    .yamm .accordion, .yamm-nav,
+    .yamm table, .yamm form,
+    .yamm .thumbnails li {
+      margin-bottom: 0;
+    }
+
+		/*-----------------------------
+		  socialize
+		 -----------------------------*/
+		.social {
+			text-align: right;
+		}
+		.social-buttons {
+			list-style-type: none;
+		}
+		.social-buttons li {
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+			padding: 5px 8px;
+			line-height: 1;
+		}
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      
+      <div class="navbar yamm">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav1">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"> Yamm Megamenu </a>
+            <div class="nav-collapse collapse" id="nav1">
+              <ul class="nav">
+                <!-- Classic list -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> List <b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <!-- Content container to add padding -->
+                      <div class="yamm-content">
+                        <ul class="span2 unstyled">
+                          <li><p><strong>Section Title</strong></p></li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                        </ul>
+                        <ul class="span2 unstyled">
+                          <li><p><strong>Links Title</strong></p></li>
+                          <li>
+                            <a href="#"> Link Item </a>
+                          </li>
+                          <li>
+                            <a href="#"> Link Item </a>
+                          </li>
+                          <li>
+                            <a href="#"> Link Item </a>
+                          </li>
+                          <li>
+                            <a href="#"> Link Item </a>
+                          </li>
+                          <li>
+                            <a href="#"> Link Item </a>
+                          </li>
+                          <li>
+                            <a href="#"> Link Item </a>
+                        </ul>
+                        <ul class="span2 unstyled">
+                          <li><p><strong>Section Title</strong></p></li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                        </ul>
+                        <ul class="span2 unstyled">
+                          <li><p><strong>Section Title</strong></p></li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            List Item
+                          </li>
+                          <li>
+                            <ul>
+                              <li>
+                                <a href="#"> Link Item </a>
+                              </li>
+                              <li>
+                                <a href="#"> Link Item </a>
+                              </li>
+                              <li>
+                                <a href="#"> Link Item </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Accordion demo -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Accordion <b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row-fluid">
+                          <div id="accordion2" class="accordion  span6">
+                            <div class="accordion-group">
+                              <div class="accordion-heading">
+                                <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle collapsed"> Collapsible Group Item #1 </a>
+                              </div>
+                              <div class="accordion-body collapse" id="collapseOne" style="height: 0px;">
+                                <div class="accordion-inner">
+                                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-group">
+                              <div class="accordion-heading">
+                                <a href="#collapseTwo" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle"> Collapsible Group Item #2 </a>
+                              </div>
+                              <div class="accordion-body collapse" id="collapseTwo">
+                                <div class="accordion-inner">
+                                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-group">
+                              <div class="accordion-heading">
+                                <a href="#collapseThree" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle"> Collapsible Group Item #3 </a>
+                              </div>
+                              <div class="accordion-body collapse" id="collapseThree">
+                                <div class="accordion-inner">
+                                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="accordion3" class="accordion  span6">
+                            <div class="accordion-group">
+                              <div class="accordion-heading">
+                                <a href="#collapseOne1" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle collapsed"> Collapsible Group Item #1 </a>
+                              </div>
+                              <div class="accordion-body collapse" id="collapseOne1" style="height: 0px;">
+                                <div class="accordion-inner">
+                                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-group">
+                              <div class="accordion-heading">
+                                <a href="#collapseTwo1" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle"> Collapsible Group Item #2 </a>
+                              </div>
+                              <div class="accordion-body collapse" id="collapseTwo1">
+                                <div class="accordion-inner">
+                                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-group">
+                              <div class="accordion-heading">
+                                <a href="#collapseThree1" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle"> Collapsible Group Item #3 </a>
+                              </div>
+                              <div class="accordion-body collapse" id="collapseThree1">
+                                <div class="accordion-inner">
+                                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Classic dropdown -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Classic <b class="caret"></b> </a><!-- Classic Dropdown -->
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li>
+                      <a tabindex="-1" href="#"> Action </a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#"> Another action </a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#"> Something else here </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a tabindex="-1" href="#"> Separated link </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Pictures -->
+                <li class="dropdown yamm-fullwidth">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pictures <b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="yamm-content">
+                        <!-- thumbnails needs a row-fluid to make span fluid -->
+                        <div class="row-fluid">
+                          <ul class="thumbnails">
+                            <li class="span2">
+                              <a class="thumbnail" href="#"> <img alt="150x190" data-src="holder.js/150x90"> </a>
+                            </li>
+                            <li class="span2">
+                              <a class="thumbnail" href="#"> <img alt="150x190" data-src="holder.js/150x90"> </a>
+                            </li>
+                            <li class="span2">
+                              <a class="thumbnail" href="#"> <img alt="150x190" data-src="holder.js/150x90"> </a>
+                            </li>
+                            <li class="span2">
+                              <a class="thumbnail" href="#"> <img alt="150x190" data-src="holder.js/150x90"> </a>
+                            </li>
+                            <li class="span2">
+                              <a class="thumbnail" href="#"> <img alt="150x190" data-src="holder.js/150x90"> </a>
+                            </li>
+                            <li class="span2">
+                              <a class="thumbnail" href="#"> <img alt="150x190" data-src="holder.js/150x90"> </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Main hero unit -->
+      <div class="hero-unit">
+        <h1>Hello, Yamm!</h1>
+        <p>
+          This is <i>Yet another megamenu</i> for Bootstrap from Twitter. It uses the standard navbar markup and the fluid grid system classes from Bootstrap. Work for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+          <br />
+          This project is currently hosted on Github.
+        </p>
+        <br />
+        <p>
+          <a href="#" class="btn btn-large"> View on Github&raquo; </a>
+        </p>
+      </div>
+
+      <hr>
+
+<!--
+      <div class="social">
+        <div class="container">
+          <ul class="social-buttons">
+            <li>
+              <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=geedmo&repo=yamm&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+            </li>
+            <li>
+              <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=geedmo&repo=yamm&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+            </li>
+            <li class="follow-btn">
+              <a href="https://twitter.com/geedmo" class="twitter-follow-button" data-show-count="false" data-dnt="true"> Follow @geedmo </a>
+            </li>
+            <li class="tweet-btn">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out this Megamenu for Bootstrap" data-via="geedmo" data-dnt="true"> Tweet </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+-->
+      <div class="row">
+        <div class="span4">
+          <p class="lead">Markup</p>
+          <p>
+            Reuse Bootstrap navbar markup and add class <code>.yamm</code> at the top. <br>
+            Then add your markup into the <code>.dropdown > li</code><br>
+            Optionally use <code>.yamm-content</code> to add a padding for your content. Default padding used in demo <code>20px 30px</code> 
+          </p>
+        </div>
+
+        <div class="span8">
+<pre class="prettyprint">
+&lt;div class="yamm navbar"&gt;
+  ...
+  &lt;ul class="nav"&gt;
+    &lt;li class="dropdown"&gt;
+      &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Account
+        &lt;b class="caret"&gt;&lt;/b&gt;
+      &lt;/a&gt;
+      &lt;ul class="dropdown-menu"&gt;
+        &lt;li&gt;
+          &lt;div class="yamm-content"&gt;
+          ...
+          &lt;/div&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+          <p>Use class <code>yamm-fullwidth</code> applied to <code>.dropdown</code> to makes the menu always expand to the navbar width</p>
+        </div>
+      </div>
+      <hr>
+      
+      <h2>Grid Examples</h2>
+
+      <!-- Grid Examples -->
+      <div class="navbar yamm">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav2">
+              <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"> Layouts </a>
+            <div class="nav-collapse collapse" id="nav2">
+              <ul class="nav">
+                <!-- Grid 12 Menu -->
+                <li class="dropdown yamm-fullwidth">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid<b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li class="grid-demo">
+                        <div class="row-fluid">
+                          <div class="span12">
+                            .span12
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span6">
+                            .span6
+                          </div>
+                          <div class="span6">
+                            .span6
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span4">
+                            .span4
+                          </div>
+                          <div class="span4">
+                            .span4
+                          </div>
+                          <div class="span4">
+                            .span4
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span3">
+                            .span3
+                          </div>
+                          <div class="span3">
+                            .span3
+                          </div>
+                          <div class="span3">
+                            .span3
+                          </div>
+                          <div class="span3">
+                            .span3
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span2">
+                            .span2
+                          </div>
+                          <div class="span2">
+                            .span2
+                          </div>
+                          <div class="span2">
+                            .span2
+                          </div>
+                          <div class="span2">
+                            .span2
+                          </div>
+                          <div class="span2">
+                            .span2
+                          </div>
+                          <div class="span2">
+                            .span2
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                          <div class="span1">
+                            .span1
+                          </div>
+                        </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- With Offsets -->
+                <li class="dropdown yamm-fullwidth">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Offset<b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li class="grid-demo">
+                      <div class="row-fluid">
+                        <div class="span4" >
+                          4
+                        </div>
+                        <div class="span4 offset4">
+                          4 offset 4
+                        </div>
+                      </div>
+                      <div class="row-fluid">
+                        <div class="span3 offset3">
+                          3 offset 3
+                        </div>
+                        <div class="span3 offset3">
+                          3 offset 3
+                        </div>
+                      </div>
+                      <div class="row-fluid">
+                        <div class="span6 offset6">
+                          6 offset 6
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Aside Menu -->
+                <li class="dropdown yamm-fullwidth">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aside<b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li class="layout-demo">
+                      <div class="row-fluid">
+                        <div class="span3">
+                          3
+                        </div>
+                        <div class="span9">
+                          9
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Nesting Menu -->
+                <li class="dropdown yamm-fullwidth">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nesting<b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li class="grid-demo">
+                      <div class="row-fluid">
+                        <div class="span12">
+                          12
+                        </div>
+                      </div>
+                      <div class="row-fluid">
+                        <div class="span12">
+                          12
+                          <div class="row-fluid">
+                              <div class="span4">4</div>
+                              <div class="span4">4</div>
+                              <div class="span4">4</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span4">
+          <p class="lead">Markup</p>
+          <p>
+            Same as above and use the fluid grid system to ensure all row will correctly fit with the menu width.<br>
+            Works better with fullwidth menus
+          </p>
+        </div>
+        <div class="span8">
+<pre class="prettyprint">
+&lt;div class="yamm navbar"&gt;
+  ...
+  &lt;ul class="nav"&gt;
+    &lt;li class="dropdown"&gt;
+      &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Account
+        &lt;b class="caret"&gt;&lt;/b&gt;
+      &lt;/a&gt;
+      &lt;ul class="dropdown-menu"&gt;
+        &lt;li&gt;
+          &lt;div class="row-fluid">
+            &lt;div class="span4"&gt;...&lt;/div&gt;
+            &lt;div class="span4"&gt;...&lt;/div&gt;
+            ...
+          &lt;/div>
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+        </div>
+      </div>  
+      <hr>
+      <h2>More Examples</h2>
+      <!-- Misc components -->
+      <div class="navbar yamm">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav3">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"> Misc </a>
+            <div class="nav-collapse collapse" id="nav3">
+              <ul class="nav">
+                <!-- Media Example -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Media <b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="yamm-content" >
+                        <ul class="media-list">
+                          <li class="media">
+                            <a href="#" class="pull-right"> <img data-src="holder.js/64x64" class="media-object" alt="64x64" > </a>
+                            <div class="media-body">
+                              <h4 class="media-heading">Media heading</h4>
+                              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
+                            </div>
+                          </li>
+                          <li class="media">
+                            <a href="#" class="pull-right"> <img data-src="holder.js/64x64" class="media-object" alt="64x64" > </a>
+                            <div class="media-body">
+                              <h4 class="media-heading">Media heading</h4>
+                              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Tables -->
+                <li class="dropdown yamm-fullwidth">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Tables <b class="caret"></b> </a>
+                  <ul class="dropdown-menu ">
+                    <li>
+                      <div class="yamm-content">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Username</th>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Username</th>                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="2">Larry the Bird</td>
+                              <td>@twitter</td>
+                              <td colspan="2">Larry the Bird</td>
+                              <td>@twitter</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Thumbnails demo -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Thumbnails <b class="caret"></b> </a>
+                  <ul class="dropdown-menu ">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row-fluid">
+                          <ul class="thumbnails">
+                            <li class="span4">
+                              <div class="thumbnail">
+                                <img alt="260x130" data-src="holder.js/260x130">
+                                <div class="caption">
+                                  <h3>Expresso</h3>
+                                  <p>
+                                    Mazagran doppio half and half aftertaste organic, rich doppio
+                                  </p>
+                                  <p>
+                                    <a class="btn btn-primary" href="#"> Action </a>
+                                    <a class="btn" href="#"> Action </a>
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="span4">
+                              <div class="thumbnail">
+                                <img alt="260x130" data-src="holder.js/260x130">
+                                <div class="caption">
+                                  <h3>Americano</h3>
+                                  <p>
+                                    Black latte cinnamon, cultivar trifecta crema cappuccino
+                                  </p>
+                                  <p>
+                                    <a class="btn btn-primary" href="#"> Action </a>
+                                    <a class="btn" href="#"> Action </a>
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="span4">
+                              <div class="thumbnail">
+                                <img alt="260x130" data-src="holder.js/260x130">
+                                <div class="caption">
+                                  <h3>Macchiato</h3>
+                                  <p>
+                                    Bar roast et, as latte café au lait, mocha aromatic robusta
+                                  </p>
+                                  <p>
+                                    <a class="btn btn-primary" href="#"> Action </a>
+                                    <a class="btn" href="#"> Action </a>
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>     
+
+              </ul>
+              <ul class="nav pull-right">
+                <!-- Forms -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Forms <b class="caret"></b> </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="yamm-content">
+                        <form action="send.php" >
+                          <input type="text" placeholder="Name" id="inputName">
+                          <br />
+                          <input type="password" placeholder="Email" id="inputEmail">
+                          <br />
+                          <textarea></textarea>
+                          <br />
+                          <button class="btn" type="submit">
+                            Send
+                          </button>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </li>                
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <p class="lead">Anchors and Anchor buttons</p>
+          <p>Since Bootstrap on doesn't expect to have more than one anchor children under <code>.dropdown > li</code>, on low resolutions  styles are overriden. </p>
+          <p>Redeclare your anchor styles under class <code>.yamm-content</code> to avoid touch classic dropdowns</p>
+          <p>Of course, a <code>button.btn</code> doesn't need this</p>
+          <p><b>A better way?</b></p>
+          <p>Build your Bootstrap with this version of <a href="yamm-less/responsive-navbar.less">responsive-navbar.less</a></p>
+        </div>
+        <div class="span8">
+<pre class="prettyprint lang-css">
+.yamm .yamm-content a,
+.yamm .yamm-content a:hover,
+.yamm .yamm-content a:focus {
+  background: transparent;
+  font-weight: normal;      
+}
+.yamm .yamm-content a {
+  color: #0088CC;
+}
+.yamm .yamm-content a:hover,
+.yamm .yamm-content a:focus {
+  color: #005580;
+}
+</pre>
+       </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <p class="lead">Javascript</p>
+          <p>This code will prevent unexpected menu close when using some components (like accordion)</p>
+        </div>
+        <div class="span8">
+<pre class="prettyprint lang-js">
+$(document).on('click', '.yamm .dropdown-menu', function(e) {
+  e.stopPropagation()
+})
+</pre>
+        </div>
+      </div>
+
+      <footer>
+        <hr>
+        <p>
+          &copy; Company 2013
+        </p>
+      </footer>
+
+    </div>
+    <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="https://raw.github.com/imsky/holder/master/holder.js"></script>
+    <script>
+  		$(function() {
+
+        // make code pretty
+        window.prettyPrint && prettyPrint()
+
+        $(document).on('click', '.yamm .dropdown-menu', function(e) {
+          e.stopPropagation()
+        })
+
+  		})
+    </script>
+
+    <script>
+		! function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (!d.getElementById(id)) {
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+		}(document, "script", "twitter-wjs");
+    </script>
+  </body>
+</html>

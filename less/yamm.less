@@ -1,0 +1,98 @@
+/*!
+ * Yamm!
+ * Yet another megamenu for Bootstrap
+ * http://geedmo.github.com/yamm
+ *
+ * https://github.com/geedmo
+ */
+
+// standard bootstrap
+@navbarCollapseWidth: 969px;
+
+//-----------------------------
+//  Main Styles
+//-----------------------------
+
+.yamm {
+
+  // reset positions 
+  .nav, .dropup, .dropdown, .collapse {
+    position: static;
+  }  
+
+  // propagate menu position under navbar inner or container 
+  .navbar-inner, .container {
+    position: relative;
+  }
+
+  // by default aligns to menu item 
+  .dropdown-menu {
+    left: auto;
+    > li {
+      display: block;
+    } 
+  }
+  .nav.pull-right .dropdown-menu {
+    right: 0;
+  }
+  
+  // Content with padding 
+  .yamm-content {
+    padding: 20px 30px;
+    .clearfix(); // acts as a span container
+  }
+
+  // remove dropdown top arrows 
+  &.navbar .nav > li > .dropdown-menu:after,
+  &.navbar .nav > li > .dropdown-menu:before {
+    display: none;  
+  }
+  
+  //  Fullwidth menu
+  .dropdown.yamm-fullwidth .dropdown-menu {
+    width: 100%;
+    left: 0; right: 0;
+  }
+
+}
+
+//-----------------------------
+// Responsiveness 
+//-----------------------------
+
+@media (max-width: @navbarCollapseWidth) {
+
+  .yamm  {
+    // width auto to avoid overflow navbar
+    .dropdown.yamm-fullwidth .dropdown-menu {
+      width: auto;
+    }
+    // remove horizontal padding 
+    .yamm-content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .dropdown-menu > li > ul {
+      display: block;
+    }
+  }
+}
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+.clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}

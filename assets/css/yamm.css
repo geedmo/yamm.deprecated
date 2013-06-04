@@ -1,0 +1,60 @@
+/*!
+ * Yamm!
+ * Yet another megamenu for Bootstrap
+ * http://geedmo.github.com/yamm
+ *
+ * https://github.com/geedmo
+ */
+.yamm .nav,
+.yamm .dropup,
+.yamm .dropdown,
+.yamm .collapse {
+  position: static;
+}
+.yamm .navbar-inner,
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .dropdown-menu > li {
+  display: block;
+}
+.yamm .nav.pull-right .dropdown-menu {
+  right: 0;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+  *zoom: 1;
+}
+.yamm .yamm-content:before,
+.yamm .yamm-content:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.yamm .yamm-content:after {
+  clear: both;
+}
+.yamm.navbar .nav > li > .dropdown-menu:after,
+.yamm.navbar .nav > li > .dropdown-menu:before {
+  display: none;
+}
+.yamm .dropdown.yamm-fullwidth .dropdown-menu {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 969px) {
+  .yamm .dropdown.yamm-fullwidth .dropdown-menu {
+    width: auto;
+  }
+  .yamm .yamm-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .yamm .dropdown-menu > li > ul {
+    display: block;
+  }
+}
