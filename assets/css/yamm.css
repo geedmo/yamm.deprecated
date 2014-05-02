@@ -21,6 +21,9 @@
 .yamm .dropdown-menu > li {
   display: block;
 }
+.yamm .dropdown-submenu .dropdown-menu {
+  left: 100%;
+}
 .yamm .nav.pull-right .dropdown-menu {
   right: 0;
 }
