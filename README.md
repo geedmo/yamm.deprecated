@@ -1,5 +1,8 @@
-# Yamm #
+---
+#[Yamm for Bootstrap 3?](http://geedmo.github.io/yamm3/)
+----
 
+# Yamm #
 
 This is *Yet another megamenu for [Bootstrap](http://getbootstrap.com/2.3.2/)* from Twitter.   
    
