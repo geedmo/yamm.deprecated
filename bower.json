@@ -1,7 +1,28 @@
 {
   "name": "yamm",
-  "main": ["./assets/css/yamm.css"],
-  "dependencies": {
-    "bootstrap": "<=2.3.2"
-  }
+  "version": "1.0.0",
+  "homepage": "http://geedmo.github.io/yamm/",
+  "authors": [{
+      "name" : "German Morales",
+      "email" : "geedmo.ds@gmail.com",
+      "homepage" : "http://geedmo.com"
+    }
+  ],
+  "description": "Yet another megamenu for Bootstrap 2.x",
+  "main": "./assets/css/yamm.css",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "bootstrap",
+    "megamenu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
