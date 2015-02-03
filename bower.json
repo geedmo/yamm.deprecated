@@ -1,0 +1,7 @@
+{
+  "name": "yamm",
+  "main": ["./assets/css/yamm.css"],
+  "dependencies": {
+    "bootstrap": "<=2.3.2"
+  }
+}
