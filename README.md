@@ -2,7 +2,7 @@
 #[Yamm for Bootstrap 3?](http://geedmo.github.io/yamm3/)
 ----
 
-# Yamm #
+# Yamm (deprecated) #
 
 This is *Yet another megamenu for [Bootstrap](http://getbootstrap.com/2.3.2/)* from Twitter.   
    
@@ -12,7 +12,7 @@ In few words, a megamenu that uses the standard navbar markup and the fluid grid
 
 	{ 
 		"require": {
-			"geedmo/yamm": "dev-master"
+			"geedmo/yamm.deprecated": "dev-master"
 		}
 	}
 
