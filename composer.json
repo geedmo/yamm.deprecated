@@ -1,16 +1,16 @@
 {
-    "name": "geedmo/yamm",
-    "description": "Yet another megamenu for Bootstrap 2.x",
+    "name": "geedmo/yamm.deprecated",
+    "description": "Yet another megamenu for Bootstrap 2.x (deprecated)",
 	"keywords": ["bootstrap", "megamenu"],
     "license": "MIT",
     "authors": [
         {
             "name": "German Morales",
-            "email": "geedmo.ds@gmail.com",
+            "email": "support@geedmo.com",
 			"homepage": "http://geedmo.com"
         }
     ],
     "support": {
-      "issues": "https://github.com/geedmo/yamm/issues"
+      "issues": "https://github.com/geedmo/yamm.deprecated/issues"
     }
 }
