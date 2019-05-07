@@ -21,7 +21,7 @@ In few words, a megamenu that uses the standard navbar markup and the fluid grid
 
 See demo for online examples and documentation
 
-#[Demo](http://geedmo.github.io/yamm)
+#[Demo](http://geedmo.github.io/yamm.deprecated)
 
 
 
